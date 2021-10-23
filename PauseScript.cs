@@ -33,6 +33,6 @@ public class PauseScript : MonoBehaviour
     {
 		pauseUI.SetActive(!pauseUI.activeSelf);
 		Time.timeScale = 1f;
-		AudioListener.volume = 1f;
+		AudioListener.volume = TitleManager.masterVolume / 100f;
 	}
 }
